@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background: #d4c128;
+    padding: 50px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'lobster', sans-serif;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .container-header {
+    color: rgb(97, 97, 97);
+    font-size: 26px;
+}
+
+.container .container-header::after,
+.container .container-header::before {
+    content: ' · ';
+    font-size: 30px;
+    font-weight: bold;
+    color: #d4c128;
+}
+
+.wrapper .container,
+.search_section,
+.container-book {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.container-book .container-header h2 {
+    color: rgb(59, 59, 59);
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 34px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item .inner h2 {
+    margin-bottom: unset;
+    color: rgb(53, 53, 53);
+}
+
+.item .inner p {
+    margin-top: 5px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text],
+input[type=number],
+input[type=search] {
+    font-family: Raleway, sans-serif;
+    background: #eeebcd;
+    border: 2px solid #d4c128;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 8px 24px;
+    background: #d4c128;
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-submit:hover {
+    background: #ffbb00;
+    color: rgb(255, 255, 255);
+}
+
+input[type=text],
+input[type=number],
+input[type=search]:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button,
+.undo-button,
+.trash-button {
+    cursor: pointer;
+    border: none;
+    font-size: 33px;
+    background: transparent;
+    color: #d4c128;
+}
+
+.check-button:hover,
+.undo-button:hover,
+.trash-button:hover {
+    color: #ffbb00;
+}
+
+.undo-button,
+.check-button {
+    margin-left: auto;
+}
+
+.iconContainer {
+    display: flex;
+}
+
+.iconContainer button {
+    margin: 0 3%;
+}
+
+.textTitle::before {
+    content: 'Judul Buku : ';
+}
+
+footer p {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer p a {
+    text-decoration: underline #ffea00;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+
+
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container,
+    .search_section {
+        width: 100%;
+    }
+
+    .container-book {
+        width: 100%;
+    }
+
+    .container-book .container-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-book .container-header h2 {
+        color: rgb(97, 97, 97);
+    }
+
+    .item {
+        width: 110%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
